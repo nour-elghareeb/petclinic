@@ -1,8 +1,9 @@
 package ne.petclinic.model;
 
-import java.time.LocalDate;
 
 public class Pet {
+    private Owner owner;
+    private LocalData birthDate;
     private PetType type;
 
     public PetType getType() {
@@ -29,6 +30,5 @@ public class Pet {
         this.birthDate = birthDate;
     }
 
-    private Owner owner;
-    private LocalDate birthDate;
+
 }
