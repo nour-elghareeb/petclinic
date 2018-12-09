@@ -4,7 +4,7 @@ package ne.petclinic.model;
 import java.time.LocalDate;
 import java.util.Date;
 
-public class Pet {
+public class Pet extends BaseEntity{
     private Owner owner;
     private LocalDate birthDate;
     private PetType type;
