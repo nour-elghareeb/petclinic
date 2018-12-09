@@ -4,10 +4,9 @@ import ne.petclinic.model.Owner;
 
 import java.util.Set;
 
-public interface RepoService<T> {
-    T findById(long id);
-    T findByName(String name);
-    T save(T owner);
+public interface RepoService<T, ID> {
+    T findById(ID id);
+    T save(T object);
     Set<T> findAll();
 
 }
